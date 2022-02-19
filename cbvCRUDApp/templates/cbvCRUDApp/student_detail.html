@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="/students">Students List</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/create">Add Student</a>
+    <h1>Student Details</h1>
+    <ol>
+        <li><h3>First Name: {{student.firstName}}</h3></li>
+        <li><h3>Last Name: {{student.lastName}}</h3></li>
+        <li><h3>Test Score: {{student.testScore}}</h3></li>
+        <li>
+            <a href="/update/{{student.id}}">Update</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/delete/{{student.id}}">Delete</a>
+        </li>
+    </ol>
+</body>
+</html>
